@@ -1,0 +1,10 @@
+Архив содержит установщик и инструкции.
+
+launcher.py, loggercnf.py и mainapp.py содержат:
+скрипт запуска, конфигурацию логирования и скрипт основной логики соотвественно.
+
+Для запуска скриптов из IDE или командной строки необходимо изменить launcher.py
+30 -- subprocess.Popen(f'mainapp.exe {action}', creationflags=subprocess.CREATE_NEW_CONSOLE)
+изменить на
+30 -- subprocess.Popen(f'mainapp.py {action}', creationflags=subprocess.CREATE_NEW_CONSOLE)
+
